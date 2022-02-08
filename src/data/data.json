@@ -13,12 +13,23 @@
         { "name": "Cart", "url": "cart"},
         { "name": "My orders", "url": "orders"}
     ],
-    
+
     "_comment": "navbar",
     "jumbotron_info": "Tis resource contains over 50K books. (ᵔ◡ᵔ)",
 
     "_comment": "footer",
-    "footer": "Book Mall by Catalin Plesu"
+    "footer": "Book Mall by Catalin Plesu",
+
+    "curency": "$",
+    "books": [
+        {"title":"Algorithms to Live By: The Computer Science of Human Decisions", "price": 12, "img": "https://images-na.ssl-images-amazon.com/images/I/415UY+ToE-L._SX329_BO1,204,203,200_.jpg"},
+        {"title":"The Pragmatic Programmer: 20th Anniversary Edition, 2nd Edition: Your Journey to Mastery", "price": 30, "img": "https://m.media-amazon.com/images/I/91WFb-PpoNL._AC_UY218_.jpg"},
+        {"title":"Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People", "price": 37, "img": "https://m.media-amazon.com/images/I/81RkzIXMFxL._AC_UY218_.jpg"},
+        {"title":"Introduction to Algorithms, 3rd Edition (The MIT Press)", "price": 35, "img": "https://m.media-amazon.com/images/I/61uRpcdPhNL._AC_UY218_.jpg"},
+        {"title":"Compilers: Principles, Techniques, and Tools", "price": 70, "img": "https://m.media-amazon.com/images/I/51vQlx7ig3L._AC_UY218_.jpg"},
+        {"title":"The Algorithmic Beauty of Plants (The Virtual Laboratory)", "price": 89, "img": "https://m.media-amazon.com/images/I/61K776vtH1L._AC_UY218_.jpg"},
+        {"title":"To Mock a Mockingbird", "price": 17, "img": "https://m.media-amazon.com/images/I/51ELPKh3VFL._AC_UY218_.jpg"}
+    ]
 
 
 }

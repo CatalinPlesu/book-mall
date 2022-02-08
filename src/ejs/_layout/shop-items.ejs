@@ -1,0 +1,28 @@
+<section>
+    <div class="container py-5">
+        <div class="row">
+            <% for (i = 0; i < 4; i++) { %>
+            <% books.forEach(function (book, index) { %>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+
+                <div class="card">
+                    <img
+                    src="<%= book.img %>"
+                    class="card-img-top"
+                    alt="Laptop"
+                    />
+                    <div class="card-body">
+                        <p class="card-text text-center"><%= book.price %> <%= curency %></p>
+                        <small>
+                            <p class="card-title text-center"><%= book.title.substring(0, 25) %>...</p>
+                        </small>
+                        <a href="product" class="text-dark stretched-link text-decoration-none"> </a>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+            <% }; %>
+
+        </div>
+    </div>
+</section>

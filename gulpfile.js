@@ -75,6 +75,9 @@ function watch() {
     gulp.watch(dir.src.js + "/**/*.js").on('change', 
         gulp.series( "js", browserSync.reload));
 
+    gulp.watch(dir.src.fonts + "/**/*.ttf").on('change', 
+        gulp.series( "fonts", browserSync.reload));
+
 	// gulp.watch(dir.src.img + "/**/*.+(jpg|jpeg|png|gif|svg)",["imagemin"]);
 }
 
