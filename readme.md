@@ -1,12 +1,20 @@
 # Book Mall
-- Template for web thechnology class
+Template for web thechnology class
 
-# Install
+### Install
 ```
 npm install
 ```
 
-# Run
+### First run
+```
+gulp ejs sass js
+```
+
+### Run watch
 ```
 gulp
 ```
+
+### Modify
+only files in src
