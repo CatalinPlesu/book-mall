@@ -13,7 +13,8 @@ var dir = {
         ejs  : './src/ejs',
         scss : './src/scss',
         js   : './src/js',
-        img  : './src/img'
+        img  : './src/img',
+        data  : './src/data'
     },
     dist: {
         html : './dist',
@@ -27,7 +28,7 @@ gulp.task("ejs", async function() {
     gulp.src(
         [dir.src.ejs + "/**/*.ejs", "!" + dir.src.ejs + "/**/_*.ejs"] 
     )
-        .pipe(ejs(require('./src/data.json')))
+        .pipe(ejs(require(dir.src.data + '/data.json')))
         .pipe(rename({ extname: ".html" }))
         .pipe(gulp.dest(dir.dist.html))
 });
@@ -45,6 +46,9 @@ gulp.task("js", function() {
 });
 
 function watch() {
+    (gulp.series("ejs", "sass", "js")());
+
+
     browserSync.init({
         server: {
             baseDir: dir.dist.html,
@@ -53,6 +57,9 @@ function watch() {
     });
 
 	gulp.watch(dir.src.ejs + "/**/*.ejs").on('change', 
+        gulp.series( "ejs", browserSync.reload));
+
+	gulp.watch(dir.src.data + "/**/*.json").on('change', 
         gulp.series( "ejs", browserSync.reload));
 
     gulp.watch(dir.src.scss + "/**/*.scss").on('change', 

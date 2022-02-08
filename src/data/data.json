@@ -1,0 +1,13 @@
+{
+    "_comment": "general",
+    "title": "Book Mall",
+
+    "_comment": "navbar",
+    "current": "Catalin",
+    "dropdown": "Profile",
+    "dropdown_header": "Manage Profile",
+    "settings": "Settings",
+    "cart": "Cart",
+    "orders": "My orders"
+    
+}
