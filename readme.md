@@ -6,12 +6,7 @@ Template for web thechnology class
 npm install
 ```
 
-### First run
-```
-gulp ejs sass js
-```
-
-### Run watch
+### Run 
 ```
 gulp
 ```
