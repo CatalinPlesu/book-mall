@@ -14,13 +14,15 @@ var dir = {
         scss : './src/scss',
         js   : './src/js',
         img  : './src/img',
+        fonts  : './src/fonts',
         data  : './src/data'
     },
     dist: {
         html : './dist',
         css  : './dist/css',
         js   : './dist/js',
-        img  : './dist/img'
+        img  : './dist/img',
+        fonts  : './dist/fonts'
     }
 };
 
@@ -45,8 +47,13 @@ gulp.task("js", function() {
 		.pipe(gulp.dest(dir.dist.js)); 
 });
 
+gulp.task("fonts", function() {
+	return gulp.src([dir.src.fonts + "/**/*.ttf"])
+		.pipe(gulp.dest(dir.dist.fonts)); 
+});
+
 function watch() {
-    (gulp.series("ejs", "sass", "js")());
+    (gulp.series("ejs", "sass", "js", "fonts")());
 
 
     browserSync.init({

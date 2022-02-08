@@ -1,5 +1,11 @@
 // @import "node_modules/bootstrap/scss/bootstrap";
 
+@font-face { font-family: firasans-regular; 
+			 src: url('./font/FiraSans-Regular.ttf'); } 
+* {
+	font-family: firasans-regular;
+}
+
 .my_accent {
     background-color: #e3f2fd;
 }

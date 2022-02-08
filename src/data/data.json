@@ -3,11 +3,22 @@
     "title": "Book Mall",
 
     "_comment": "navbar",
+    "search": "Search",
     "current": "Catalin",
     "dropdown": "Profile",
     "dropdown_header": "Manage Profile",
-    "settings": "Settings",
-    "cart": "Cart",
-    "orders": "My orders"
+    "dropdown_options": [
+        { "name": "Settings", "url": "settings"},
+        { "name": "Personal center", "url": "center"},
+        { "name": "Cart", "url": "cart"},
+        { "name": "My orders", "url": "orders"}
+    ],
     
+    "_comment": "navbar",
+    "jumbotron_info": "Tis resource contains over 50K books. (ᵔ◡ᵔ)",
+
+    "_comment": "footer",
+    "footer": "Book Mall by Catalin Plesu"
+
+
 }
