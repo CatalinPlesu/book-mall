@@ -7,29 +7,137 @@
     "current": "Catalin",
     "dropdown": "Profile",
     "dropdown_header": "Manage Profile",
-    "dropdown_options": [
-        { "name": "Settings", "url": "settings"},
-        { "name": "Personal center", "url": "center"},
-        { "name": "Cart", "url": "cart"},
-        { "name": "My orders", "url": "orders"}
+    "dropdown_options": [{
+            "name": "Settings",
+            "url": "settings"
+        },
+        {
+            "name": "Personal center",
+            "url": "center"
+        },
+        {
+            "name": "Cart",
+            "url": "cart"
+        },
+        {
+            "name": "My orders",
+            "url": "orders"
+        }
     ],
 
-    "_comment": "navbar",
-    "jumbotron_info": "Tis resource contains over 50K books. (ᵔ◡ᵔ)",
+    "_comment": "jumbotron",
+    "jumbotron_info": "This resource contains over 50K books. (ᵔ◡ᵔ)",
 
     "_comment": "footer",
     "footer": "Book Mall by Catalin Plesu",
 
+    "_comment": "items view",
     "curency": "$",
-    "books": [
-        {"title":"Algorithms to Live By: The Computer Science of Human Decisions", "price": 12, "img": "https://images-na.ssl-images-amazon.com/images/I/415UY+ToE-L._SX329_BO1,204,203,200_.jpg"},
-        {"title":"The Pragmatic Programmer: 20th Anniversary Edition, 2nd Edition: Your Journey to Mastery", "price": 30, "img": "https://m.media-amazon.com/images/I/91WFb-PpoNL._AC_UY218_.jpg"},
-        {"title":"Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People", "price": 37, "img": "https://m.media-amazon.com/images/I/81RkzIXMFxL._AC_UY218_.jpg"},
-        {"title":"Introduction to Algorithms, 3rd Edition (The MIT Press)", "price": 35, "img": "https://m.media-amazon.com/images/I/61uRpcdPhNL._AC_UY218_.jpg"},
-        {"title":"Compilers: Principles, Techniques, and Tools", "price": 70, "img": "https://m.media-amazon.com/images/I/51vQlx7ig3L._AC_UY218_.jpg"},
-        {"title":"The Algorithmic Beauty of Plants (The Virtual Laboratory)", "price": 89, "img": "https://m.media-amazon.com/images/I/61K776vtH1L._AC_UY218_.jpg"},
-        {"title":"To Mock a Mockingbird", "price": 17, "img": "https://m.media-amazon.com/images/I/51ELPKh3VFL._AC_UY218_.jpg"}
+    "books": [{
+            "title": "Game Engine Architecture",
+            "price": 91,
+            "src": "./img/books/Game_Engine_Architecture.png"
+        },
+        {
+            "title": "The Universe of Us",
+            "price": 96,
+            "src": "./img/books/The_Universe_of_Us.png"
+        },
+        {
+            "title": "The Algorithm Design Manual",
+            "price": 89,
+            "src": "./img/books/The_Algorithm_Design_Manual.png"
+        },
+        {
+            "title": "Game Programming Patterns",
+            "price": 54,
+            "src": "./img/books/Game_Programming_Patterns.png"
+        },
+        {
+            "title": "Data-oriented design software engineering for limited resources and short schedules",
+            "price": 72,
+            "src": "./img/books/Data-oriented_design_software_engineering_for_limited_resources_and_short_schedules.png"
+        },
+        {
+            "title": "Practical Statistics for Data Scientists",
+            "price": 8,
+            "src": "./img/books/Practical_Statistics_for_Data_Scientists.png"
+        },
+        {
+            "title": "Models and Algorithms of Time-dependent Scheduling",
+            "price": 66,
+            "src": "./img/books/Models_and_Algorithms_of_Time-dependent_Scheduling.png"
+        },
+        {
+            "title": "The Pragmatic Programmer",
+            "price": 37,
+            "src": "./img/books/The_Pragmatic_Programmer.png"
+        },
+        {
+            "title": "Hipster_CV",
+            "price": 3,
+            "src": "./img/books/Hipster_CV.png"
+        },
+        {
+            "title": "Pattern-Oriented Software Architecture",
+            "price": 88,
+            "src": "./img/books/Pattern-Oriented_Software_Architecture.png"
+        },
+        {
+            "title": "Design Patterns",
+            "price": 42,
+            "src": "./img/books/Design_Patterns.png"
+        },
+        {
+            "title": "To Mock a Mockingbird",
+            "price": 49,
+            "src": "./img/books/To_Mock_a_Mockingbird.png"
+        },
+        {
+            "title": "Dragon Book Compilers Principle Techniques and Tools",
+            "price": 7,
+            "src": "./img/books/Dragon_Book_Compilers_Principle_Techniques_and_Tools.png"
+        },
+        {
+            "title": "3D Math Primer for Graphics and Game Development",
+            "price": 58,
+            "src": "./img/books/3D_Math_Primer_for_Graphics_and_Game_Development.png"
+        },
+        {
+            "title": "live-more-lives-than-one-0.3.6",
+            "price": 71,
+            "src": "./img/books/live-more-lives-than-one-0.3.6.png"
+        },
+        {
+            "title": "Computer Graphics: Principles and Practice",
+            "price": 36,
+            "src": "./img/books/Computer_Graphics:_Principles_and_Practice.png"
+        },
+        {
+            "title": "The Art of Game Design: A Book of Lenses",
+            "price": 89,
+            "src": "./img/books/The_Art_of_Game_Design:_A_Book_of_Lenses.png"
+        },
+        {
+            "title": "Grokking Algorithms",
+            "price": 3,
+            "src": "./img/books/Grokking_Algorithms.png"
+        },
+        {
+            "title": "Algorithms to Live By",
+            "price": 5,
+            "src": "./img/books/Algorithms_to_Live_By.png"
+        },
+        {
+            "title": "SENECA - Moral Letters to Lucilius v.8",
+            "price": 24,
+            "src": "./img/books/SENECA_-_Moral_Letters_to_Lucilius_v.8.png"
+        },
+        {
+            "title": "Introduction to Algorithms",
+            "price": 34,
+            "src": "./img/books/Introduction_to_Algorithms.png"
+        }
     ]
-
 
 }

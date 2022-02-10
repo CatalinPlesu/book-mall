@@ -52,9 +52,13 @@ gulp.task("fonts", function() {
 		.pipe(gulp.dest(dir.dist.fonts)); 
 });
 
-function watch() {
-    (gulp.series("ejs", "sass", "js", "fonts")());
+gulp.task("img", function() {
+	return gulp.src([dir.src.img + "/**/*.+(jpg|jpeg|png|gif|svg)"])
+		.pipe(gulp.dest(dir.dist.img)); 
+});
 
+function watch() {
+    (gulp.series("ejs", "sass", "js", "fonts", "img")());
 
     browserSync.init({
         server: {
@@ -78,7 +82,8 @@ function watch() {
     gulp.watch(dir.src.fonts + "/**/*.ttf").on('change', 
         gulp.series( "fonts", browserSync.reload));
 
-	// gulp.watch(dir.src.img + "/**/*.+(jpg|jpeg|png|gif|svg)",["imagemin"]);
+    gulp.watch(dir.src.img + "/**/*.+(jpg|jpeg|png|gif|svg)").on('change', 
+        gulp.series( "img", browserSync.reload));
 }
 
 exports.default = watch;

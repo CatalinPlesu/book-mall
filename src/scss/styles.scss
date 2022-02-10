@@ -1,11 +1,17 @@
 // @import "node_modules/bootstrap/scss/bootstrap";
 
-@font-face { font-family: fira-regular;
-src: url('./font/FiraSans-Regular.ttf'); }
-@font-face { font-family: lato-regular;
-src: url('./font/lato-regular.ttf'); }
-@font-face { font-family: flat-regular;
-src: url('./font/flat-ui-icons-regular.ttf'); }
+@font-face {
+    font-family: fira-regular;
+    src: url("./font/FiraSans-Regular.ttf");
+}
+@font-face {
+    font-family: lato-regular;
+    src: url("./font/lato-regular.ttf");
+}
+@font-face {
+    font-family: flat-regular;
+    src: url("./font/flat-ui-icons-regular.ttf");
+}
 
 // * {
 //  font-family: fira-regular;
@@ -15,11 +21,14 @@ src: url('./font/flat-ui-icons-regular.ttf'); }
     background-color: #e3f2fd;
 }
 
+.card-img-top {
+    width: auto;
+    height: 200px;
+    object-fit: contain;
+}
 
-@media screen and (min-width: 600px) {
-    .card-img-top {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
+.item_text {
+   line-height: 1.5em;
+    height: 3em;      
+    overflow: hidden;  
 }
