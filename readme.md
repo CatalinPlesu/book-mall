@@ -13,3 +13,10 @@ gulp
 
 ### Modify
 only files in src
+
+
+# Home page
+![home_page](./img/homepage.png)
+
+# Log In
+![login](./img/login.png)
