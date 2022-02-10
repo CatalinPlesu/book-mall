@@ -27,10 +27,11 @@ var dir = {
 };
 
 gulp.task("ejs", async function() {
+    var data = require(dir.src.data + '/data.json');
     gulp.src(
         [dir.src.ejs + "/**/*.ejs", "!" + dir.src.ejs + "/**/_*.ejs"] 
     )
-        .pipe(ejs(require(dir.src.data + '/data.json')))
+        .pipe(ejs(data))
         .pipe(rename({ extname: ".html" }))
         .pipe(gulp.dest(dir.dist.html))
 });

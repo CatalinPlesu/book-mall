@@ -8,12 +8,13 @@
     "current": "Catalin",
     "dropdown": "Profile",
     "dropdown_header": "Manage Profile",
-    "dropdown_options": [{
+    "dropdown_options": [
+        {
             "name": "Settings",
             "url": "settings"
         },
         {
-            "name": "Personal center",
+            "name": "Personal Center",
             "url": "center"
         },
         {
@@ -21,8 +22,8 @@
             "url": "cart"
         },
         {
-            "name": "My orders",
-            "url": "orders"
+            "name": "My Library",
+            "url": "library"
         }
     ],
 
@@ -34,6 +35,10 @@
 
     "_comment": "categories",
     "categories": [
+        "Data Science",
+        "Computer Science",
+        "Algorithms",
+        "Statistics",
         "Action and Adventure",
         "Classics",
         "Comic Book or Graphic Novel",
