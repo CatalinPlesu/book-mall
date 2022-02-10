@@ -42,22 +42,22 @@ gulp.task("sass", async function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task("js", function() {
+gulp.task("js", async function() {
 	return gulp.src([dir.src.js + "/**/*.js"])
 		.pipe(gulp.dest(dir.dist.js)); 
 });
 
-gulp.task("fonts", function() {
+gulp.task("fonts", async function() {
 	return gulp.src([dir.src.fonts + "/**/*.ttf"])
 		.pipe(gulp.dest(dir.dist.fonts)); 
 });
 
-gulp.task("img", function() {
+gulp.task("img", async function() {
 	return gulp.src([dir.src.img + "/**/*.+(jpg|jpeg|png|gif|svg)"])
 		.pipe(gulp.dest(dir.dist.img)); 
 });
 
-function watch() {
+async function watch() {
     (gulp.series("ejs", "sass", "js", "fonts", "img")());
 
     browserSync.init({

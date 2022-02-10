@@ -2,11 +2,11 @@
     <div class="container-fluid">
 
         <a class="navbar-brand" href="#"><b>
-            <%= title %>
+            Book Mall
         </b></a>
 
         <form class="form-inline">
-            <input class="form-control mr-sm-2 rounded" type="search" placeholder="<%= search %>" aria-label="Search">
+            <input class="form-control mr-sm-2 rounded" type="search" placeholder="Search" aria-label="Search">
         </form>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,24 +20,36 @@
                 <li class="">
                     <a class="nav-link" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
                         <span class="sr-only">
-                            <%= current %>
+                            Catalin
                         </span></a>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-display="static" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <%= dropdown %>
+                        Profile
                     </a>
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <h6 class="dropdown-header">
-                            <%= dropdown_header %>
+                            Manage Profile
                         </h6>
 
-                        <% dropdown_options.forEach(function (item, index) { %>
-                        <a class="dropdown-item" href="<%= item.url %>">
-                                <%= item.name %>
+                        
+                        <a class="dropdown-item" href="settings">
+                                Settings
                             </a>
-                        <% }); %>
+                        
+                        <a class="dropdown-item" href="center">
+                                Personal center
+                            </a>
+                        
+                        <a class="dropdown-item" href="cart">
+                                Cart
+                            </a>
+                        
+                        <a class="dropdown-item" href="orders">
+                                My orders
+                            </a>
+                        
 
                     </div>
                 </li>
