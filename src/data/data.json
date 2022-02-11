@@ -10,20 +10,20 @@
     "dropdown_header": "Manage Profile",
     "dropdown_options": [
         {
-            "name": "Settings",
-            "url": "settings"
+            "name": "Personal Center",
+            "url": "profile.html"
         },
         {
-            "name": "Personal Center",
-            "url": "center"
+            "name": "Settings",
+            "url": "settings.html"
         },
         {
             "name": "Cart",
-            "url": "cart"
+            "url": "cart.html"
         },
         {
             "name": "My Library",
-            "url": "library"
+            "url": "library.html"
         }
     ],
 
